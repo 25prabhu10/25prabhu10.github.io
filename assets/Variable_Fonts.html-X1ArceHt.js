@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-29e4a2af","path":"/Languages/HTML/Typography/Variable_Fonts.html","title":"Variable Fonts","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1666469073000},"filePathRelative":"Languages/HTML/Typography/Variable_Fonts.md"}');export{a as data};

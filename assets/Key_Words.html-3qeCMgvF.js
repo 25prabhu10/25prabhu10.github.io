@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-cade4b8a","path":"/Concepts/Key_Words.html","title":"Key Words","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"Floating Point Numbers","slug":"floating-point-numbers","link":"#floating-point-numbers","children":[]}],"git":{"updatedTime":1690829560000},"filePathRelative":"Concepts/Key_Words.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-54163302","path":"/Languages/JavaScript/jQuery/jQuery.html","title":"jQuery","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1624112372000},"filePathRelative":"Languages/JavaScript/jQuery/jQuery.md"}');export{e as data};

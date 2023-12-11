@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-b547c2d2","path":"/Non-Sorted/Interview/Database.html","title":"Database Programming","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1666469073000},"filePathRelative":"Non-Sorted/Interview/Database.md"}');export{e as data};

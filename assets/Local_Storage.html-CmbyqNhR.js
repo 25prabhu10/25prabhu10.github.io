@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-42e6d7d8","path":"/Concepts/Web/Local_Storage.html","title":"Local Storage","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1666469073000},"filePathRelative":"Concepts/Web/Local_Storage.md"}');export{e as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-445c446d","path":"/Non-Sorted/Job_Portals.html","title":"Job Portals","lang":"en-US","frontmatter":{"title":"Job Portals","description":"Job portals and channels","date":"2023-03-08T00:00:00.000Z","lastmod":"2023-08-15T00:00:00.000Z"},"headers":[],"git":{"updatedTime":1690829560000},"filePathRelative":"Non-Sorted/Job_Portals.md"}');export{t as data};

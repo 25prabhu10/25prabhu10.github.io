@@ -1,0 +1,1 @@
+import{_ as t,o as a,c,b as e,d as o}from"./app-jDLxG9B3.js";const s={},n=e("h1",{id:"agile",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#agile","aria-hidden":"true"},"#"),o(" Agile")],-1),i=e("p",null,"Agile concepts",-1),l=[n,i];function r(_,d){return a(),c("div",null,l)}const f=t(s,[["render",r],["__file","Agile.html.vue"]]);export{f as default};

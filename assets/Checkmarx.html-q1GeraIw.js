@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-05665128","path":"/Concepts/Application_Security/Checkmarx.html","title":"Checkmarx","lang":"en-US","frontmatter":{"title":"Checkmarx","description":"A static code analysis tool"},"headers":[],"git":{"updatedTime":1690829560000},"filePathRelative":"Concepts/Application_Security/Checkmarx.md"}');export{t as data};

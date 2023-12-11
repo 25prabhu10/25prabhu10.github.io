@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-0bcd9d72","path":"/Concepts/AWS/AWS_Cognito.html","title":"AWS Cognito","lang":"en-US","frontmatter":{"title":"AWS Cognito","description":"AWS Cognito","prev":"./AWS"},"headers":[],"git":{"updatedTime":1661690200000},"filePathRelative":"Concepts/AWS/AWS_Cognito.md"}');export{t as data};

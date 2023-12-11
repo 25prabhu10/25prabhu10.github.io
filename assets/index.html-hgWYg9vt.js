@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-4d654fae","path":"/Non-Sorted/Apti/Programs/","title":"Programs","lang":"en-US","frontmatter":{"title":"Programs","next":"./Simple-Array-Sum.md","sidebar":false},"headers":[],"git":{"updatedTime":1662908699000},"filePathRelative":"Non-Sorted/Apti/Programs/README.md"}');export{e as data};

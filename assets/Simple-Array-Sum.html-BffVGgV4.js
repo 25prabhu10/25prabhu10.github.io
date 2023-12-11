@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2774690f","path":"/Non-Sorted/Apti/Programs/Simple-Array-Sum.html","title":"Simple Array Sum","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1661690200000},"filePathRelative":"Non-Sorted/Apti/Programs/Simple-Array-Sum.md"}');export{e as data};

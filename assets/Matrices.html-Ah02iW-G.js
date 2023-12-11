@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-b9d78e12","path":"/Concepts/Data-Structures_and_Algorithms/Data-Structures/Matrices.html","title":"Matrices","lang":"en-US","frontmatter":{"title":"Matrices","description":"Matrices"},"headers":[],"git":{"updatedTime":1661690200000},"filePathRelative":"Concepts/Data-Structures_and_Algorithms/Data-Structures/Matrices.md"}');export{t as data};

@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-40a1038b","path":"/Concepts/","title":"Concepts","lang":"en-US","frontmatter":{"title":"Concepts","next":{"text":"Data-Structures and Algorithms","link":"./Data-Structures_and_Algorithms/"},"sidebar":false},"headers":[],"git":{"updatedTime":1690829560000},"filePathRelative":"Concepts/README.md"}');export{t as data};

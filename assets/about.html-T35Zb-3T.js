@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-22a39d25","path":"/about.html","title":"","lang":"en-US","frontmatter":{"sidebar":false,"footer":"MIT Licensed | Copyright © 2020-present Prabhu K Hiremath"},"headers":[],"git":{"updatedTime":1666469073000},"filePathRelative":"about.md"}');export{e as data};

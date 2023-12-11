@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-d9ee0d6a","path":"/Languages/JavaScript/Libraries/","title":"JavaScript Libraries","lang":"en-US","frontmatter":{"title":"JavaScript Libraries","next":"./NPM_Packages.md","sidebar":false},"headers":[],"git":{"updatedTime":1662908699000},"filePathRelative":"Languages/JavaScript/Libraries/README.md"}');export{a as data};

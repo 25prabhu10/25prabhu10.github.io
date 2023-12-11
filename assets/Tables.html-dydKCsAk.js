@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-68832f41","path":"/Languages/Markdown/Tables.html","title":"Tables","lang":"en-US","frontmatter":{"prev":"./Code","next":"./List"},"headers":[],"git":{"updatedTime":1624112372000},"filePathRelative":"Languages/Markdown/Tables.md"}');export{e as data};

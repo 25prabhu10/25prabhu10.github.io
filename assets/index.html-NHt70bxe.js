@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-781670d8","path":"/Languages/CI-CD/","title":"CI-CD","lang":"en-US","frontmatter":{"title":"CI-CD","next":"./CI-CD.md","sidebar":false},"headers":[],"git":{"updatedTime":1662908699000},"filePathRelative":"Languages/CI-CD/README.md"}');export{e as data};

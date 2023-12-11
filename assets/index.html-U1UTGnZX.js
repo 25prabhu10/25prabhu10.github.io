@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3305a6c9","path":"/Concepts/Regular_Expression/","title":"Regular Expression","lang":"en-US","frontmatter":{"title":"Regular Expression","next":"./regex.md","sidebar":false},"headers":[],"git":{"updatedTime":1666469073000},"filePathRelative":"Concepts/Regular_Expression/README.md"}');export{e as data};

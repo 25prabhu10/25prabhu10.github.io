@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-26eb30e4","path":"/Non-Sorted/Interview/Agile.html","title":"Agile","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1666469073000},"filePathRelative":"Non-Sorted/Interview/Agile.md"}');export{e as data};

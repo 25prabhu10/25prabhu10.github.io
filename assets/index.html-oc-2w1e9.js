@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-fe392414","path":"/Concepts/Design_Patterns/","title":"Design Principles and Patterns","lang":"en-US","frontmatter":{"title":"Design Principles and Patterns","next":"./Design_Principles.md","sidebar":false},"headers":[],"git":{"updatedTime":1666469073000},"filePathRelative":"Concepts/Design_Patterns/README.md"}');export{e as data};

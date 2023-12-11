@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f0cc7894","path":"/Languages/JavaScript/React/React_Query.html","title":"React Query","lang":"en-US","frontmatter":{"title":"React Query","description":"Powerful asynchronous state management"},"headers":[],"git":{"updatedTime":1691307656000},"filePathRelative":"Languages/JavaScript/React/React_Query.md"}');export{e as data};

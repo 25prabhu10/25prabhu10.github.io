@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-13a27cbc","path":"/Languages/C-Sharp/","title":"C-Sharp","lang":"en-US","frontmatter":{"title":"C-Sharp","next":"./C-Sharp.md","sidebar":false},"headers":[],"git":{"updatedTime":1666469073000},"filePathRelative":"Languages/C-Sharp/README.md"}');export{a as data};

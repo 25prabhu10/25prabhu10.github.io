@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-7b17303a","path":"/Languages/C-CPP/","title":"C-CPP","lang":"en-US","frontmatter":{"title":"C-CPP","next":"./C.md","sidebar":false,"date":"2022-11-21T00:00:00.000Z","lastmod":"2022-11-21T00:00:00.000Z"},"headers":[],"git":{"updatedTime":1691307656000},"filePathRelative":"Languages/C-CPP/README.md"}');export{e as data};

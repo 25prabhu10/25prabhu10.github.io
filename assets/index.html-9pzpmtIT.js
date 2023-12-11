@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-f4216dfe","path":"/Collection/Editors/","title":"Text Editors","lang":"en-US","frontmatter":{"title":"Text Editors","next":"./Vim-Neovim.md","sidebar":false},"headers":[],"git":{"updatedTime":1663410301000},"filePathRelative":"Collection/Editors/README.md"}');export{t as data};

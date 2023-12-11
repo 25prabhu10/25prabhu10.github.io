@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-0dd03f0a","path":"/Non-Sorted/Interview/Resignation.html","title":"Resignation","lang":"en-US","frontmatter":{"title":"Resignation","description":null,"date":"2023-01-09T00:00:00.000Z","lastmod":"2023-01-09T00:00:00.000Z"},"headers":[],"git":{"updatedTime":1690829560000},"filePathRelative":"Non-Sorted/Interview/Resignation.md"}');export{t as data};

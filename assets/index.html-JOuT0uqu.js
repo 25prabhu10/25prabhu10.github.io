@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-909747d0","path":"/Concepts/Programming_Paradigms/","title":"Programming Paradigms","lang":"en-US","frontmatter":{"title":"Programming Paradigms","next":"./Object-Oriented_Programming.md","sidebar":false},"headers":[],"git":{"updatedTime":1668244097000},"filePathRelative":"Concepts/Programming_Paradigms/README.md"}');export{a as data};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-cdca4822","path":"/Languages/JavaScript/Node.js/","title":"Node.js","lang":"en-US","frontmatter":{"title":"Node.js","next":"./Node.js.md","sidebar":false},"headers":[],"git":{"updatedTime":1662908699000},"filePathRelative":"Languages/JavaScript/Node.js/README.md"}');export{e as data};

@@ -1,0 +1,1 @@
+import{_ as r,o as a,c as s,b as e,d as t}from"./app-jDLxG9B3.js";const c={},o=e("h1",{id:"simple-array-sum",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#simple-array-sum","aria-hidden":"true"},"#"),t(" Simple Array Sum")],-1),i=[o];function m(n,_){return a(),s("div",null,i)}const d=r(c,[["render",m],["__file","Simple-Array-Sum.html.vue"]]);export{d as default};

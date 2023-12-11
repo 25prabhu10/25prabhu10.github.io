@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-3a2d22fd","path":"/Concepts/AWS/","title":"AWS","lang":"en-US","frontmatter":{"title":"AWS","next":"./AWS","sidebar":false},"headers":[],"git":{"updatedTime":1662908699000},"filePathRelative":"Concepts/AWS/README.md"}');export{e as data};

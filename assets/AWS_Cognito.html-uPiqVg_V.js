@@ -1,0 +1,1 @@
+import{_ as o,o as t,c as a,b as e,d as c}from"./app-jDLxG9B3.js";const n={},s=e("h1",{id:"aws-cognito",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#aws-cognito","aria-hidden":"true"},"#"),c(" AWS Cognito")],-1),r=[s];function _(i,d){return t(),a("div",null,r)}const l=o(n,[["render",_],["__file","AWS_Cognito.html.vue"]]);export{l as default};

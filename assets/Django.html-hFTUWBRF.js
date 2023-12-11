@@ -1,0 +1,7 @@
+import{_ as a,o as e,c as n,e as t}from"./app-jDLxG9B3.js";const s={},l=t(`<h1 id="django" tabindex="-1"><a class="header-anchor" href="#django" aria-hidden="true">#</a> Django</h1><ol><li><p>Install virtualenv.</p><div class="language-python" data-ext="py"><pre class="language-python"><code>pip install virtualenv
+</code></pre></div></li><li><p>Create the virtual environment.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>virtualenv --no-site-packages name
+</code></pre></div></li><li><p>Activate the virtual environment.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code><span class="token builtin class-name">source</span> name_of_env_dir/bin/activate
+</code></pre></div></li><li><p>Install Django if not install.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>pip <span class="token function">install</span> Django
+</code></pre></div></li><li><p>Start your project.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>django-admin startproject project_name
+</code></pre></div></li><li><p>Check if the prohject is created.</p><div class="language-bash" data-ext="sh"><pre class="language-bash"><code>python manage.py runserver
+</code></pre></div></li><li><p>Open the link given in the browser: <code>http://localhost:8000</code> or <code>http://127.0.0.1:8000</code></p></li></ol>`,2),i=[l];function o(c,r){return e(),n("div",null,i)}const p=a(s,[["render",o],["__file","Django.html.vue"]]);export{p as default};

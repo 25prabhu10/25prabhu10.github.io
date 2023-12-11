@@ -1,0 +1,1 @@
+import{_ as n,r as o,o as t,c,a as r}from"./app-jDLxG9B3.js";const s={};function a(_,l){const e=o("Cards");return t(),c("div",null,[r(e)])}const m=n(s,[["render",a],["__file","index.html.vue"]]);export{m as default};

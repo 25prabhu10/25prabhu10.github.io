@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-9521044c","path":"/Concepts/Regular_Expression/regex_collection.html","title":"regex collection","lang":"en-US","frontmatter":{"title":"regex collection","description":"Collection of regex sequence"},"headers":[],"git":{"updatedTime":1666469073000},"filePathRelative":"Concepts/Regular_Expression/regex_collection.md"}');export{e as data};

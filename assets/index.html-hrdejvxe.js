@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-4df2af24","path":"/Non-Sorted/Math/","title":"Math","lang":"en-US","frontmatter":{"title":"Math","next":"./Numbers.md","sidebar":false,"date":"2022-11-21T00:00:00.000Z","lastmod":"2022-11-21T00:00:00.000Z"},"headers":[],"git":{"updatedTime":1690829560000},"filePathRelative":"Non-Sorted/Math/README.md"}');export{t as data};
