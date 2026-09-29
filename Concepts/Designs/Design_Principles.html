@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-IN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Design Principles | Notes</title>
+    <meta name="description" content="General guidelines that can guide your class structure and relationships">
+    <meta name="generator" content="VitePress v2.0.0-alpha.20">
+    
+    <link rel="preload stylesheet" href="/assets/style.--QVjO6q.css" as="style">
+    <link rel="preload stylesheet" href="/assets/vp-icons.3ec7c4fc.css" as="style">
+    <script type="module" src="/assets/chunks/metadata.a2bead65.js"></script>
+    <script type="module" src="/assets/app.eFS9UG_d.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.q5rAVC0E.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/framework.DPTtP3IW.js">
+    <link rel="modulepreload" href="/assets/chunks/theme.QaGs10w0.js">
+    <link rel="modulepreload" href="/assets/Concepts_Designs_Design_Principles.md.BCprR20P.lean.js">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+    <link href="/logo.png" rel="icon">
+    <link href="/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/icons/apple-touch-icon-180x180-precomposed.png" rel="apple-touch-icon-precomposed" sizes="180x180">
+    <link color="#3eaf7c" href="/icons/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="/manifest.json" rel="manifest">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Notes" name="application-name">
+    <meta content="#3eaf7c" name="msapplication-TileColor">
+    <meta content="#3eaf7c" name="theme-color">
+    <meta content="/browserconfig.xml" name="msapplication-config">
+    <script id="check-dark-mode">(()=>{let e=localStorage.getItem(`vitepress-theme-appearance`)||`auto`,t=window.matchMedia(`(prefers-color-scheme: dark)`).matches;(!e||e===`auto`?t:e===`dark`)&&document.documentElement.classList.add(`dark`)})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle(`mac`,/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-087f3d3f><!--[--><!--]--><!--[--><span tabindex="-1" data-v-62da967b></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-62da967b>Skip to content</a><!--]--><!----><header class="VPNav" data-v-087f3d3f data-v-753409b0><div class="VPNavBar top" data-v-753409b0 data-v-a3b362f2><div class="wrapper" data-v-a3b362f2><div class="container" data-v-a3b362f2><div class="title" data-v-a3b362f2><div class="VPNavBarTitle" data-v-a3b362f2 data-v-df93c784><a class="title" href="/" title="Notes" data-v-df93c784><!--[--><!--]--><!--[--><img class="VPImage logo" src="/logo.png" alt data-v-c2709f74><!--]--><span data-v-df93c784>Notes</span><!--[--><!--]--></a></div></div><div class="content" data-v-a3b362f2><div class="content-body" data-v-a3b362f2><!--[--><!--]--><div class="VPNavBarSearch search" data-v-a3b362f2 data-v-a42fb57f><!--[--><button type="button" class="VPNavBarSearchButton" aria-label="Search" aria-keyshortcuts="/ control+k meta+k" data-v-a42fb57f data-v-0b410f28><span class="vpi-search" aria-hidden="true" data-v-0b410f28></span><span class="text" data-v-0b410f28>Search</span><span class="keys" aria-hidden="true" data-v-0b410f28><kbd class="key-mod" data-v-0b410f28></kbd><kbd class="key-k" data-v-0b410f28></kbd></span></button><!----><!--]--></div><nav aria-label="Main Navigation" class="VPNavMenu VPNavBarMenu menu" data-v-a3b362f2 data-v-75f98cb2><ul class="list" data-v-75f98cb2><!--[--><li class="" data-v-75f98cb2><a class="VPLink link VPNavMenuLink VPNavBarMenuLink" href="/" data-v-75f98cb2 data-v-599a9be8><!--[--><span data-v-599a9be8>Home</span><!--]--></a></li><li class="" data-v-75f98cb2><a class="VPLink link VPNavMenuLink VPNavBarMenuLink" href="/about.html" data-v-75f98cb2 data-v-599a9be8><!--[--><span data-v-599a9be8>About</span><!--]--></a></li><!--]--></ul></nav><!----><div class="VPNavAppearance VPNavBarAppearance appearance" data-v-a3b362f2 data-v-ecc13e65><!----><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-label="Appearance" aria-checked="false" data-v-ecc13e65 data-v-eb85f878 data-v-979f3796><span class="check" data-v-979f3796><span class="icon" data-v-979f3796><!--[--><span class="vpi-sun sun" aria-hidden="true" data-v-eb85f878></span><span class="vpi-moon moon" aria-hidden="true" data-v-eb85f878></span><!--]--></span></span></button></div><ul class="VPSocialLinks VPNavSocialLinks VPNavBarSocialLinks social-links" data-v-a3b362f2 data-v-e7fb7c4c data-v-52cb646e><!--[--><li data-v-52cb646e><a class="VPSocialLink no-icon" href="https://github.com/25prabhu10/notes" aria-label="github" target="_blank" rel="me noopener" data-v-52cb646e data-v-6e0ec538><span class="vpi-simple-icons-github" data-v-6e0ec538 data-v-532fb2a2></span></a></li><!--]--></ul><!----><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="Menu" aria-expanded="false" data-v-a3b362f2 data-v-7de49c6c><span class="container" aria-hidden="true" data-v-7de49c6c><span class="top" data-v-7de49c6c></span><span class="middle" data-v-7de49c6c></span><span class="bottom" data-v-7de49c6c></span></span></button></div></div></div></div><div class="divider" data-v-a3b362f2><div class="divider-line" data-v-a3b362f2></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-087f3d3f data-v-4cc01fb6><div class="container" data-v-4cc01fb6><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-allow-mismatch="style" data-v-4cc01fb6 data-v-8e4bd93f><button type="button" data-v-8e4bd93f>Return to top</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-087f3d3f data-v-745f9d15><div class="VPDoc has-aside" data-v-745f9d15 data-v-eae19221><!--[--><!--]--><div class="container" data-v-eae19221><div class="aside" data-v-eae19221><div class="aside-curtain" data-v-eae19221></div><div class="aside-container" data-v-eae19221><div class="aside-content" data-v-eae19221><div class="VPDocAside" data-v-eae19221 data-v-251983b8><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-251983b8 data-v-5c1f32df><div class="content" data-v-5c1f32df><div class="outline-marker" data-v-5c1f32df></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-5c1f32df>On this page</div><ul class="VPDocOutlineItem root" data-v-5c1f32df data-v-1481ef0d><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-251983b8></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-eae19221><div class="content-container" data-v-eae19221><!--[--><!--]--><main class="main" data-v-eae19221><div style="position:relative;" class="vp-doc _Concepts_Designs_Design_Principles" data-v-eae19221><div><h1 id="design-principles" tabindex="-1">Design Principles <a class="header-anchor" href="#design-principles" aria-label="Permalink to “Design Principles”">​</a></h1><p>General guidelines that can guide your class structure and relationships</p><ul><li>No standard catalogue of principles</li><li>Varies by domain</li></ul><p>Fundamental Principles:</p><ol><li><p><strong><a href="#encapsulate-what-varies">Encapsulate what varies</a></strong></p></li><li><p><strong><a href="#favour-composition">Favour composition</a></strong> (over inheritance)</p></li><li><p><strong><a href="#loose-coupling">Loose coupling</a></strong></p></li><li><p><strong><a href="#program-to-interfaces">Program to interfaces</a></strong></p></li><li><p><strong><a href="#solid-principles">SOLID Principles</a></strong> (5 principles)</p></li></ol><h2 id="encapsulate-what-varies" tabindex="-1">Encapsulate What Varies <a class="header-anchor" href="#encapsulate-what-varies" aria-label="Permalink to “Encapsulate What Varies”">​</a></h2><p>Identify the aspects of your application that vary and separate them from what stays the same</p><ul><li><p>If we have part of our design that is changing, say with every new requirement, well then we should encapsulate that part away from the rest of the design</p></li><li><p><strong>Underlines almost all design patterns</strong> like Strategy, Adapter, Facade, Decorator, Observer, Singleton, etc...</p></li></ul><p><em>Example:</em> Pancake menu can be altered at any time without affecting the rest of our code</p><div class="language-csharp"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">csharp</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> Pancake</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> orderPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">string</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;">  Pancake</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> pancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">  // types will vary over time</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">  // extract it out using any of the design patterns</span></span>
+<span class="line"><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">  if</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">equals</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> ==</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;"> &#39;</span><span style="--shiki-dark:#C98A7D;--shiki-light:#032F62;">classic</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;">&#39;</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">    pancake</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ClassicPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> else</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> if</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">equals</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> ==</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;"> &#39;</span><span style="--shiki-dark:#C98A7D;--shiki-light:#032F62;">blueberry</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;">&#39;</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">    pancake</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> BlueberryPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> else</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> if</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">equals</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> ==</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;"> &#39;</span><span style="--shiki-dark:#C98A7D;--shiki-light:#032F62;">chocolate chip</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;">&#39;</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">    pancake</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ChocolateChipPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> else</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> if</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">equals</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> ==</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;"> &#39;</span><span style="--shiki-dark:#C98A7D;--shiki-light:#032F62;">banana</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;">&#39;</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">    pancake</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> BananaPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">  pancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">cook</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">  pancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">plate</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">  pancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">addButter</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">  return</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;"> pancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span></code></pre></div><ul><li>The <code>orderPancake</code> method is responsible for creating pancakes and serving them</li><li>The pancake types are hardcoded in the method and can change over time</li><li>We can encapsulate the pancake creation to a factory to separate the creation of pancakes from the rest of the code</li></ul><div class="language-csharp"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">csharp</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">// extract the pancake creation to a factory</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">// encapsulate the creation of pancakes</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">// now we can change the pancake types without affecting the rest of the code</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> SimplePancakeFactory</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> Pancake</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> createPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">string</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;">    Pancake</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> pancake</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#005CC5;"> null</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">    if</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">equals</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> ==</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;"> &#39;</span><span style="--shiki-dark:#C98A7D;--shiki-light:#032F62;">classic</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;">&#39;</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">      pancake</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ClassicPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">    }</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> else</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> if</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">equals</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> ==</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;"> &#39;</span><span style="--shiki-dark:#C98A7D;--shiki-light:#032F62;">blueberry</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;">&#39;</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">      pancake</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> BlueberryPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">    }</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> else</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> if</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">equals</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> ==</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;"> &#39;</span><span style="--shiki-dark:#C98A7D;--shiki-light:#032F62;">chocolate chip</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;">&#39;</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">      pancake</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ChocolateChipPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">    }</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> else</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> if</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> (</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">equals</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> ==</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;"> &#39;</span><span style="--shiki-dark:#C98A7D;--shiki-light:#032F62;">banana</span><span style="--shiki-dark:#666666;--shiki-light:#032F62;">&#39;</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">      pancake</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> BananaPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">    return</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;"> pancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span></code></pre></div><ul><li>Now we can change the pancake types without affecting the rest of the code</li></ul><div class="language-csharp"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">csharp</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> Pancake</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> orderPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">string</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;">  Pancake</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> pancake</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;"> SimplePancakeFactory</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">createPancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">type</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">  pancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">cook</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">  pancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">plate</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">  pancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">addButter</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">  return</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;"> pancake</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span></code></pre></div><h2 id="favour-composition" tabindex="-1">Favour Composition <a class="header-anchor" href="#favour-composition" aria-label="Permalink to “Favour Composition”">​</a></h2><p>This principle warrants against overuse of inheritance and suggests composition as a powerful alternative for extending behaviour in our designs</p><ul><li><p><strong>&quot;has-a&quot;</strong> is better than <strong>&quot;is-a&quot;</strong></p><ul><li><em>&quot;is-a&quot;</em> is an inheritance relationship: <em>Dog &quot;is an&quot; animal</em></li><li><em>&quot;has-a&quot;</em> is a relationship of composition: <em>Dog &quot;has a&quot; owner</em></li></ul></li><li><p>Instead of inheriting behaviour, we can compose our objects with new behaviours</p></li><li><p>Composition often gives us more flexibility, even allows behaviour changes at runtime</p></li></ul><p><em>Example</em>: A <code>Duck</code> class that can fly and quack</p><div class="language-csharp"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">csharp</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> Duck</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> void</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> fly</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">    // flying behaviour</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> void</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> quack</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">    // quacking behaviour</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">// now we want to add a rubber duck that can&#39;t fly</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">// we can&#39;t inherit from Duck because it can fly</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">// we can use composition to add the fly behaviour</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> RubberDuck</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  private</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> FlyBehaviour</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> flyBehaviour</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> RubberDuck</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">    flyBehaviour</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> FlyNoWay</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> void</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> fly</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">    flyBehaviour</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">fly</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> void</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> quack</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">    // quacking behaviour</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> interface</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> FlyBehaviour</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">  void</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> fly</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> FlyNoWay</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> :</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> FlyBehaviour</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> void</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> fly</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">    // do nothing</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> FlyWithWings</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> :</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> FlyBehaviour</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> void</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> fly</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">    // flying behaviour</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span></code></pre></div><h2 id="loose-coupling" tabindex="-1">Loose Coupling <a class="header-anchor" href="#loose-coupling" aria-label="Permalink to “Loose Coupling”">​</a></h2><p>Strive for loosely coupled designs between objects that interact</p><ul><li>Components should be independent, relying on knowledge of other components as little as possible</li><li>Changes in one component should not require changes in another component</li></ul><p><em>Example</em>: A <code>WeatherStation</code> class that displays the temperature</p><div class="language-csharp"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">csharp</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> WeatherStation</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  private</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> TemperatureSensor</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> sensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> WeatherStation</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">    sensor</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> TemperatureSensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> void</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> display</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">    Console</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">WriteLine</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">sensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">getTemperature</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">());</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> TemperatureSensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> int</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> getTemperature</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">    // get temperature from sensor</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span></code></pre></div><ul><li>The <code>WeatherStation</code> class is tightly coupled to the <code>TemperatureSensor</code> class</li><li>If we want to change the sensor, we have to change the <code>WeatherStation</code> class</li><li>We can use interfaces to decouple the classes</li></ul><div class="language-csharp"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">csharp</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> interface</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ISensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">  int</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> getValue</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> TemperatureSensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> :</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ISensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> int</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> getValue</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">    // get temperature from sensor</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> WeatherStation</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  private</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ISensor</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> sensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> WeatherStation</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;">ISensor</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> sensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#C99076;--shiki-light:#005CC5;">    this</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">sensor</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;"> sensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> void</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> display</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">    Console</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">WriteLine</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">sensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">getValue</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">());</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span></code></pre></div><ul><li>Now the <code>WeatherStation</code> class is not dependent on the <code>TemperatureSensor</code> class</li><li>We can easily change the sensor without changing the <code>WeatherStation</code> class</li></ul><h2 id="program-to-interfaces" tabindex="-1">Program to Interfaces <a class="header-anchor" href="#program-to-interfaces" aria-label="Permalink to “Program to Interfaces”">​</a></h2><p>Keep our designs high-level and referring where possible to abstractions or interfaces and not concrete implementations</p><ul><li><p>Where possible, components should use abstract classes or interfaces instead of a specific implementation</p></li><li><p>Allows you to better exploit polymorphism</p></li><li><p>Makes your code more flexible and easier to change</p></li><li><p>Makes your code more testable</p></li></ul><p><em>Example</em>: A <code>WeatherStation</code> class that displays the temperature</p><div class="language-csharp"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">csharp</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> interface</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ISensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;">  int</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> getValue</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> TemperatureSensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> :</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ISensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> int</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> getValue</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">    // get temperature from sensor</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> WeatherStation</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  private</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ISensor</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> sensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> WeatherStation</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;">ISensor</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> sensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">)</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#C99076;--shiki-light:#005CC5;">    this</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">sensor</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;"> sensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">;</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> void</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> display</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">    Console</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">WriteLine</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">sensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">getValue</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">());</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span></code></pre></div><ul><li>The <code>WeatherStation</code> class is not dependent on the <code>TemperatureSensor</code> class</li><li>We can easily change the sensor without changing the <code>WeatherStation</code> class</li><li>We can create a new sensor class and pass it to the <code>WeatherStation</code> class</li></ul><div class="language-csharp"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">csharp</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">public</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> class</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> HumiditySensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> :</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> ISensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">  public</span><span style="--shiki-dark:#4D9375;--shiki-light:#c62739;"> int</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> getValue</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">()</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;"> {</span></span>
+<span class="line"><span style="--shiki-dark:#758575DD;--shiki-light:#62687b;">    // get humidity from sensor</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">  }</span></span>
+<span class="line"><span style="--shiki-dark:#666666;--shiki-light:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;">WeatherStation</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;"> weatherStation</span><span style="--shiki-dark:#666666;--shiki-light:#c62739;"> =</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;"> new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> WeatherStation</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">(</span><span style="--shiki-dark:#CB7676;--shiki-light:#c62739;">new</span><span style="--shiki-dark:#5DA994;--shiki-light:#6F42C1;"> HumiditySensor</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">());</span></span>
+<span class="line"><span style="--shiki-dark:#BD976A;--shiki-light:#24292E;">weatherStation</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">.</span><span style="--shiki-dark:#80A665;--shiki-light:#6F42C1;">display</span><span style="--shiki-dark:#666666;--shiki-light:#24292E;">();</span></span></code></pre></div><ul><li>Now the <code>WeatherStation</code> class can display the humidity</li><li>We didn&#39;t have to change the <code>WeatherStation</code> class</li></ul><h2 id="solid-principles" tabindex="-1">SOLID Principles <a class="header-anchor" href="#solid-principles" aria-label="Permalink to “SOLID Principles”">​</a></h2><p>SOLID is mnemonic acronym for:</p><ol><li><strong>S</strong>: <a href="#single-responsibility">Single Responsibility Principle (SRP)</a></li><li><strong>O</strong>: <a href="#open-closed">Open-Closed Principle (OSP)</a></li><li><strong>L</strong>: <a href="#liskov-substitution">Liskov Substitution Principle (LSP)</a></li><li><strong>I</strong>: <a href="#interface-segregation">Interface Segregation Principle (ISP)</a></li><li><strong>D</strong>: <a href="#dependency-inversion">Dependency Inversion Principle (DIP)</a></li></ol><blockquote><p>They are promoted by Robert C. Martin (Uncle Bob) and are a subset of many principles promoted by him</p></blockquote><p>SOLID principles are the design principles that enable us to manage most of the software design problems</p><ul><li>The SOLID acronym was first introduced by Micheal Feathers</li></ul><p>They can be used to resolve issues such as:</p><ul><li><p>Tight or strong coupling of the code with many other modules/applications</p></li><li><p>Tight coupling causes time to implement any new requirement, features or any bug fixes and some times it creates unknown issues</p></li><li><p>End up with a code which is not testable</p></li><li><p>End up with duplication of code</p></li><li><p>End up creating new bugs by fixing another bug</p></li></ul><p>They help us to:</p><ul><li>Achieve reduction in complexity of code</li><li>increase readability, extensibility and maintenance</li><li>Reduce error and implement Re-usability</li><li>Achieve better test-ability</li><li>Reduce tight coupling</li></ul><h3 id="single-responsibility" tabindex="-1">Single Responsibility <a class="header-anchor" href="#single-responsibility" aria-label="Permalink to “Single Responsibility”">​</a></h3><blockquote><p>&quot;A class should have only one reason to change&quot; - Robert C. Martin</p></blockquote><ul><li><p>One responsibility per class</p></li><li><p>Every module or class should have responsibility over a single part of the functionality over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class</p></li></ul><blockquote><p>&quot;Just beacuse you can, doesn&#39;t mean you should&quot;</p></blockquote><h3 id="open-closed" tabindex="-1">Open-Closed <a class="header-anchor" href="#open-closed" aria-label="Permalink to “Open-Closed”">​</a></h3><blockquote><p>&quot;Software entities should be open for extension, but closed for modification&quot; - Robert C. Martin</p></blockquote><ul><li><p><strong>Open to extension</strong> means adding subclasses as needed</p></li><li><p><strong>Closed to modification</strong> avoids tweaking the code to handle new situations</p></li><li><p>The design and writing of the code should be done in a way that new functionality should be added with minimum changes in the existing code</p></li><li><p>Composition helps in extension</p></li></ul><blockquote><p>&quot;Open-chest surgery isn&#39;t needed when putting on a coat&quot;</p></blockquote><h3 id="liskov-substitution" tabindex="-1">Liskov Substitution <a class="header-anchor" href="#liskov-substitution" aria-label="Permalink to “Liskov Substitution”">​</a></h3><blockquote><p>&quot;Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program&quot; - Introduced by Barbara Liskov</p><p>&quot;Subtype Requirement: Let 𝜙(𝑥) be a property provable about objects 𝑥 of type T. Then 𝜙(𝑦) should be true for objects 𝑦 of type S where S is a subtype of T.&quot; - Wikipedia</p></blockquote><p>Symbolically:</p><span id="mjx-00755568"><style>
+      #mjx-00755568{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><ul><li><p>Object of some <em>Base class</em> <code>S</code> can be replaced with objects of any <em>Derived class</em> of <code>S</code></p></li><li><p>If a program module is using a Base class, then the reference to the Base class can be replaced with a Derived class without affecting the functionality of the program module</p></li><li><p>We can also state that Derived types must be substitutable for their base types</p></li><li><p>Constrains subclass design</p></li><li><p>This helps design good polymorphism</p></li><li><p>Designed by contract rather than wholely depending on inheritance</p></li></ul><blockquote><p>&quot;If it looks like a duck, quacks like a duck, but needs batteries - you probably have the wrong abstraction&quot;</p></blockquote><h3 id="interface-segregation" tabindex="-1">Interface Segregation <a class="header-anchor" href="#interface-segregation" aria-label="Permalink to “Interface Segregation”">​</a></h3><blockquote><p>&quot;Many client-specific interfaces are better than one general-purpose interface&quot; - Robert C. Martin</p></blockquote><ul><li><p>No client should be forced to depend on methods it dose not use</p></li><li><p>Cohesion: How strong are the relationships between an interface&#39;s methods?</p></li><li><p>Cohesion is a quality of an interface; highly cohesive interfaces have methods related to one another. Low cohesion interfaces have many, unrelated methods</p></li><li><p>We should not enforce clients to implement interfaces that they don&#39;t use. Instead of creating one big interface we can break down it to smaller interfaces</p></li><li><p>Classes depend on the smallest interface</p><ul><li>The fewest methods and attributes</li></ul></li><li><p>Helps design good classes</p></li><li><p>Helps write unit test cases</p></li></ul><blockquote><p>&quot;You want me plug this in where?&quot;</p></blockquote><h3 id="dependency-inversion" tabindex="-1">Dependency Inversion <a class="header-anchor" href="#dependency-inversion" aria-label="Permalink to “Dependency Inversion”">​</a></h3><p>One should <em>&quot;depend upon abstractions, not concretions&quot;</em></p><ul><li><p>High-level modules should not depend on low level modules. Both should depend on abstractions</p></li><li><p>A direct dependency on a concrete class needs to be inverted to be indirect</p></li><li><p>Abstractions should not depend on the details whereas the details should depend on abstractions</p></li><li><p>Depend on abstract classes or interfaces</p></li><li><p>Avoid concrete class name dependencies</p></li><li><p>Helps in writing testable code</p></li></ul><blockquote><p>&quot;Don&#39;t call us, we&#39;ll call you&quot; &quot;Would you solder a lamp directly to the electrical wiring in a wall?&quot;</p></blockquote><h2 id="dry-principle" tabindex="-1">DRY Principle <a class="header-anchor" href="#dry-principle" aria-label="Permalink to “DRY Principle”">​</a></h2><p>DRY - Don&#39;t Repeat Yourself</p><ul><li>Every piece of knowledge must have a single, unambiguous, authoritative representation within a system</li><li>If you have the same code in more than one place, you&#39;re asking for trouble</li></ul><h2 id="grasp" tabindex="-1">GRASP <a class="header-anchor" href="#grasp" aria-label="Permalink to “GRASP”">​</a></h2><p>GRASP - General Responsibility Assignment Software Principles</p><p>It is a set of guidelines for designing objects and classes that determine where to put responsibilities and how to assign responsibilities to classes</p><ul><li>Creator</li><li>Information Expert</li><li>Low Coupling</li><li>High Cohesion</li><li>Controller</li></ul></div></div></main><footer class="VPDocFooter" data-v-eae19221 data-v-21433e0f><!--[--><!--]--><div class="edit-info" data-v-21433e0f><div class="edit-link" data-v-21433e0f><a class="VPLink link vp-external-link-icon no-icon edit-link-button" href="https://github.com/25prabhu10/notes/edit/master/docs/Concepts/Designs/Design_Principles.md" target="_blank" rel="noreferrer" data-v-21433e0f><!--[--><span class="vpi-square-pen edit-link-icon" data-v-21433e0f></span> Edit this page on GitHub<!--]--></a></div><div class="last-updated" data-v-21433e0f><p class="VPLastUpdated" data-v-21433e0f data-v-74d37e18>Updated at: <time datetime="2025-12-30T00:19:57.000Z" data-v-74d37e18></time></p></div></div><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-087f3d3f data-v-63f0225e><div class="container" data-v-63f0225e><p class="message" data-v-63f0225e>Released under the <a href="https://github.com/25prabhu10/notes/blob/master/LICENSE">MIT License</a>.</p><p class="copyright" data-v-63f0225e>Copyright © 2020-2026 <a href="https://github.com/25prabhu10">Prabhu K Hiremath</a></p></div></footer><!--[--><!--]--></div></div>
+    
+    
+  </body>
+</html>

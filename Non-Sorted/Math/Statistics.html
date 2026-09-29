@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html lang="en-IN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Statistics | Notes</title>
+    <meta name="description" content="Statistics is the study of the collection, analysis, interpretation, presentation, and organization of data">
+    <meta name="generator" content="VitePress v2.0.0-alpha.20">
+    
+    <link rel="preload stylesheet" href="/assets/style.--QVjO6q.css" as="style">
+    <link rel="preload stylesheet" href="/assets/vp-icons.3ec7c4fc.css" as="style">
+    <script type="module" src="/assets/chunks/metadata.a2bead65.js"></script>
+    <script type="module" src="/assets/app.eFS9UG_d.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.q5rAVC0E.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/framework.DPTtP3IW.js">
+    <link rel="modulepreload" href="/assets/chunks/theme.QaGs10w0.js">
+    <link rel="modulepreload" href="/assets/Non-Sorted_Math_Statistics.md.D_yU2Skq.lean.js">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+    <link href="/logo.png" rel="icon">
+    <link href="/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/icons/apple-touch-icon-180x180-precomposed.png" rel="apple-touch-icon-precomposed" sizes="180x180">
+    <link color="#3eaf7c" href="/icons/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="/manifest.json" rel="manifest">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Notes" name="application-name">
+    <meta content="#3eaf7c" name="msapplication-TileColor">
+    <meta content="#3eaf7c" name="theme-color">
+    <meta content="/browserconfig.xml" name="msapplication-config">
+    <script id="check-dark-mode">(()=>{let e=localStorage.getItem(`vitepress-theme-appearance`)||`auto`,t=window.matchMedia(`(prefers-color-scheme: dark)`).matches;(!e||e===`auto`?t:e===`dark`)&&document.documentElement.classList.add(`dark`)})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle(`mac`,/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-087f3d3f><!--[--><!--]--><!--[--><span tabindex="-1" data-v-62da967b></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-62da967b>Skip to content</a><!--]--><!----><header class="VPNav" data-v-087f3d3f data-v-753409b0><div class="VPNavBar top" data-v-753409b0 data-v-a3b362f2><div class="wrapper" data-v-a3b362f2><div class="container" data-v-a3b362f2><div class="title" data-v-a3b362f2><div class="VPNavBarTitle" data-v-a3b362f2 data-v-df93c784><a class="title" href="/" title="Notes" data-v-df93c784><!--[--><!--]--><!--[--><img class="VPImage logo" src="/logo.png" alt data-v-c2709f74><!--]--><span data-v-df93c784>Notes</span><!--[--><!--]--></a></div></div><div class="content" data-v-a3b362f2><div class="content-body" data-v-a3b362f2><!--[--><!--]--><div class="VPNavBarSearch search" data-v-a3b362f2 data-v-a42fb57f><!--[--><button type="button" class="VPNavBarSearchButton" aria-label="Search" aria-keyshortcuts="/ control+k meta+k" data-v-a42fb57f data-v-0b410f28><span class="vpi-search" aria-hidden="true" data-v-0b410f28></span><span class="text" data-v-0b410f28>Search</span><span class="keys" aria-hidden="true" data-v-0b410f28><kbd class="key-mod" data-v-0b410f28></kbd><kbd class="key-k" data-v-0b410f28></kbd></span></button><!----><!--]--></div><nav aria-label="Main Navigation" class="VPNavMenu VPNavBarMenu menu" data-v-a3b362f2 data-v-75f98cb2><ul class="list" data-v-75f98cb2><!--[--><li class="" data-v-75f98cb2><a class="VPLink link VPNavMenuLink VPNavBarMenuLink" href="/" data-v-75f98cb2 data-v-599a9be8><!--[--><span data-v-599a9be8>Home</span><!--]--></a></li><li class="" data-v-75f98cb2><a class="VPLink link VPNavMenuLink VPNavBarMenuLink" href="/about.html" data-v-75f98cb2 data-v-599a9be8><!--[--><span data-v-599a9be8>About</span><!--]--></a></li><!--]--></ul></nav><!----><div class="VPNavAppearance VPNavBarAppearance appearance" data-v-a3b362f2 data-v-ecc13e65><!----><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-label="Appearance" aria-checked="false" data-v-ecc13e65 data-v-eb85f878 data-v-979f3796><span class="check" data-v-979f3796><span class="icon" data-v-979f3796><!--[--><span class="vpi-sun sun" aria-hidden="true" data-v-eb85f878></span><span class="vpi-moon moon" aria-hidden="true" data-v-eb85f878></span><!--]--></span></span></button></div><ul class="VPSocialLinks VPNavSocialLinks VPNavBarSocialLinks social-links" data-v-a3b362f2 data-v-e7fb7c4c data-v-52cb646e><!--[--><li data-v-52cb646e><a class="VPSocialLink no-icon" href="https://github.com/25prabhu10/notes" aria-label="github" target="_blank" rel="me noopener" data-v-52cb646e data-v-6e0ec538><span class="vpi-simple-icons-github" data-v-6e0ec538 data-v-532fb2a2></span></a></li><!--]--></ul><!----><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="Menu" aria-expanded="false" data-v-a3b362f2 data-v-7de49c6c><span class="container" aria-hidden="true" data-v-7de49c6c><span class="top" data-v-7de49c6c></span><span class="middle" data-v-7de49c6c></span><span class="bottom" data-v-7de49c6c></span></span></button></div></div></div></div><div class="divider" data-v-a3b362f2><div class="divider-line" data-v-a3b362f2></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-087f3d3f data-v-4cc01fb6><div class="container" data-v-4cc01fb6><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-allow-mismatch="style" data-v-4cc01fb6 data-v-8e4bd93f><button type="button" data-v-8e4bd93f>Return to top</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-087f3d3f data-v-745f9d15><div class="VPDoc has-aside" data-v-745f9d15 data-v-eae19221><!--[--><!--]--><div class="container" data-v-eae19221><div class="aside" data-v-eae19221><div class="aside-curtain" data-v-eae19221></div><div class="aside-container" data-v-eae19221><div class="aside-content" data-v-eae19221><div class="VPDocAside" data-v-eae19221 data-v-251983b8><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-251983b8 data-v-5c1f32df><div class="content" data-v-5c1f32df><div class="outline-marker" data-v-5c1f32df></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-5c1f32df>On this page</div><ul class="VPDocOutlineItem root" data-v-5c1f32df data-v-1481ef0d><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-251983b8></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-eae19221><div class="content-container" data-v-eae19221><!--[--><!--]--><main class="main" data-v-eae19221><div style="position:relative;" class="vp-doc _Non-Sorted_Math_Statistics" data-v-eae19221><div><h1 id="statistics" tabindex="-1">Statistics <a class="header-anchor" href="#statistics" aria-label="Permalink to “Statistics”">​</a></h1><p>Statistics is the study of the collection, analysis, interpretation, presentation, and organization of data. It is a branch of mathematics that deals with the study of data and the process of making conclusions based on that data. Statistics is used in a wide range of fields, including science, business, and social sciences</p><p>In short, statistics is the study of data</p><p>It includes <strong>descriptive statistics</strong> (the study of methods and tools for collecting data, and mathematical models to describe and interpret data) and <strong>inferential statistics</strong> (the systems and techniques for making probability-based decisions and accurate predictions based on incomplete (sample) data)</p><h2 id="history-of-statistics" tabindex="-1">History of Statistics <a class="header-anchor" href="#history-of-statistics" aria-label="Permalink to “History of Statistics”">​</a></h2><p>As its name implies, statistics has its roots in the idea of &quot;the state of things&quot;. The word itself comes from the ancient Latin term <em>statisticum collegium</em>, meaning &quot;a lecture on the state of affairs&quot;. Eventually, this evolved into the Italian word <em>statista</em>, meaning &quot;statesman&quot;, and the German word <em>Statistik</em>, meaning &quot;collection of data involving the State&quot;. Gradually, the term came to be used to describe the collection of any sort of data</p><p>The modern field of statistics began to take shape from the works of R.A. Fisher in the early 20th century</p><ul><li>Design of experiments</li><li>Sampling theory</li><li>Modern Regression analysis</li><li>Classification problem</li><li>Time series</li><li>Survival analysis</li><li>Categorical analysis</li></ul><h2 id="descriptive-statistics" tabindex="-1">Descriptive Statistics <a class="header-anchor" href="#descriptive-statistics" aria-label="Permalink to “Descriptive Statistics”">​</a></h2><p>Descriptive statistics is the branch of statistics that deals with the collection, presentation, and description of data. It includes methods for summarizing and organizing data, as well as techniques for visualizing data. Descriptive statistics are used to describe the basic features of the data in a study</p><h2 id="inferential-statistics" tabindex="-1">Inferential Statistics <a class="header-anchor" href="#inferential-statistics" aria-label="Permalink to “Inferential Statistics”">​</a></h2><p>Inferential statistics is the branch of statistics that deals with making predictions and inferences about a population based on a sample of data. It involves using probability theory to make decisions about the population based on the sample data. Inferential statistics are used to draw conclusions about a population based on a sample of data</p><h2 id="pre-requisites" tabindex="-1">Pre-requisites <a class="header-anchor" href="#pre-requisites" aria-label="Permalink to “Pre-requisites”">​</a></h2><ul><li><p><strong>Absolute Value</strong>: The absolute value of a number is the distance of the number from zero on the number line. It is always positive or zero</p><span id="mjx-3542be2"><style>
+      #mjx-3542be2{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><ul><li>The absolute value of <code>5</code> is <code>5</code> and <code>-5</code> is <code>5</code></li></ul><span id="mjx-379f598"><style>
+      #mjx-379f598{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><span id="mjx-ae55409"><style>
+      #mjx-ae55409{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span></li><li><p><strong>Factorials</strong>: The factorial of a non-negative integer <code>n</code> is the product of all positive integers less than or equal to <code>n</code></p><ul><li>It is defined only for integers greater than or equal to zero:</li></ul><span id="mjx-312e485"><style>
+      #mjx-312e485{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><ul><li>Defined as:</li></ul><span id="mjx-b2b591f8"><style>
+      #mjx-b2b591f8{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><ul><li>The factorial of <code>5</code> is <code>120</code></li></ul><span id="mjx-41b4b1b"><style>
+      #mjx-41b4b1b{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span></li><li><p><strong>Summation</strong> (<em>series</em>): The summation of a sequence of numbers is the total of all the numbers in the sequence. It is denoted by the Greek letter sigma (upper-case sigma) <code>Σ</code></p><ul><li>It is a method of representing addition over lots of values without putting <code>+</code> after each one</li></ul><span id="mjx-0718225"><style>
+      #mjx-0718225{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><ul><li>Here, the expression below the <code>Σ</code> symbol (<code>i=0</code>) represents the index variable and what its starting value is, and the expression above the <code>Σ</code> symbol (<code>n</code>) represents the upper limit of the summation</li></ul><p><em>Example:</em> The summation of the first <code>n</code> natural numbers is given by:</p><span id="mjx-b9f5fe48"><style>
+      #mjx-b9f5fe48{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><ul><li>The summation of the first <code>5</code> natural numbers is <code>15</code></li></ul><span id="mjx-22930e58"><style>
+      #mjx-22930e58{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span></li><li><p><strong>Infinite series</strong>: An infinite series is the sum of the terms of an infinite sequence of numbers instead of a finite sequence</p><p><em>Example:</em> The sum of an infinite geometric series is given by:</p><span id="mjx-4280a0a8"><style>
+      #mjx-4280a0a8{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span></li></ul><h3 id="linear-approximation" tabindex="-1">Linear Approximation <a class="header-anchor" href="#linear-approximation" aria-label="Permalink to “Linear Approximation”">​</a></h3><p>Linear approximation is a method used to approximate the value of a function near a given point using the tangent line to the function at that point. It is based on the idea that for small values of <code>x</code>, the function can be approximated by a straight line</p><p><em>Example:</em> You have a table of values and you want to approximate the value at 63, but the table dose not have a value at 63</p><table tabindex="0"><thead><tr><th><code>v / α</code></th><th>0.20</th><th>0.10</th><th>0.05</th><th>0.025</th><th>0.01</th><th>0.005</th></tr></thead><tbody><tr><td><strong>40</strong></td><td>0.85070</td><td>1.30308</td><td>1.68385</td><td>2.02108</td><td>2.42326</td><td>2.70446</td></tr><tr><td><strong>50</strong></td><td>0.84887</td><td>1.29871</td><td>1.67591</td><td>2.00856</td><td>2.40327</td><td>2.67779</td></tr><tr><td><strong>60</strong></td><td>0.84765</td><td>1.29582</td><td>1.67065</td><td>2.00030</td><td>2.39012</td><td>2.66028</td></tr><tr><td><strong>70</strong></td><td>0.84679</td><td>1.29376</td><td>1.66691</td><td>1.99444</td><td>2.38081</td><td>2.64790</td></tr><tr><td><strong>80</strong></td><td>0.84614</td><td>1.29222</td><td>1.66412</td><td>1.99006</td><td>2.37387</td><td>2.63869</td></tr><tr><td><strong>90</strong></td><td>0.84563</td><td>1.29103</td><td>1.66196</td><td>1.98667</td><td>2.36850</td><td>2.63157</td></tr><tr><td><strong>100</strong></td><td>0.84523</td><td>1.29007</td><td>1.66023</td><td>1.98397</td><td>2.36422</td><td>2.62589</td></tr></tbody></table><p>You can use linear approximation to estimate the value at <code>63</code> by finding the tangent line to the function at the nearest point in the table</p><span id="mjx-971ef8b8"><style>
+      #mjx-971ef8b8{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><p>Here, <span id="mjx-95dfe788"><style>
+      #mjx-95dfe788{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> represents the data point you want to know about, <span id="mjx-a10f527"><style>
+      #mjx-a10f527{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> is the known data point <em>beneath</em> the one you want to know about, and <span id="mjx-1d3dcff8"><style>
+      #mjx-1d3dcff8{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> is the known data point <em>above</em> the one you want to know about</p><ul><li>For <code>x = 63</code>, the known data points are <code>60</code> and <code>70</code></li></ul><span id="mjx-4d3ec748"><style>
+      #mjx-4d3ec748{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><p>The value at <code>63</code> is approximately <code>1.669528</code>, if we calculate manually the actual value <code>1.669402</code> a difference of <code>0.000126</code>. Close enough for the purpose of estimation</p><h2 id="different-types-of-data" tabindex="-1">Different Types of Data <a class="header-anchor" href="#different-types-of-data" aria-label="Permalink to “Different Types of Data”">​</a></h2><p>Data are assignments of values onto observations of events and objects. They can be classified by their coding properties and the characteristics of their domains and their ranges</p><p>Different ways to classify data (typologies):</p><ul><li><p><strong><a href="#level-of-measurement">Levels of measurement</a></strong></p></li><li><p>Mosteller and Tukey&#39;s typology (1977):</p><ol><li>Names</li><li>Grades (ordered labels like beginner, intermediate, advanced)</li><li>Ranks (orders with 1 being the smallest or largest, 2 the next smallest or largest, and so on)</li><li>Counted fractions (bound by 0 and 1)</li><li>Counts (non-negative integers)</li><li>Amounts (non-negative real numbers)</li><li>Balances (any real number)</li></ol></li><li><p>Chrisman&#39;s typology (1998): Nominal, Gradation of membership, Ordinal, Interval, Log-interval, Extensive ratio, Cyclical ratio, Derived ratio, Counts, Absolute</p></li><li><p>Multivariate data types (e.g. random vectors, random matrices, etc.)</p></li></ul><h2 id="level-of-measurement" tabindex="-1">Level of measurement <a class="header-anchor" href="#level-of-measurement" aria-label="Permalink to “Level of measurement”">​</a></h2><p>The &quot;levels of measurement&quot; or &quot;scales of measurement&quot; classification that describes the nature of information within the values assigned to variables</p><p>The &quot;level of measurement&quot; helps in determining how data values can be <strong>organized, compared,</strong> and <strong>analysed</strong>?</p><p>The four levels of measurement are (developed by Psychologist Stanley Smith Stevens in 1946):</p><ol><li><strong><a href="#nominal-level">Nominal Level</a></strong></li><li><strong><a href="#ordinal-scale">Ordinal Scale</a></strong></li><li><strong><a href="#interval-scale">Interval Scale</a></strong></li><li><strong><a href="#ratio-scale">Ratio Scale</a></strong></li></ol><p>Both, <strong>interval</strong> and <strong>ratio</strong> data are usually combined into a single category called <strong>metric</strong> data</p><p>Comparison:</p><table tabindex="0"><thead><tr><th>Incremental progress</th><th>Measure property</th><th>Mathematical operators</th><th>Advanced operations</th><th>Central tendency</th><th>Variability</th></tr></thead><tbody><tr><td>Nominal</td><td>Classification, membership</td><td><code>=</code>, <code>≠</code></td><td>Grouping</td><td>Mode</td><td>Quantitative variation</td></tr><tr><td>Ordinal</td><td>Comparison, level</td><td><code>&gt;</code>, <code>&lt;</code></td><td>Sorting</td><td>Median</td><td>Range, Interquartile range</td></tr><tr><td>Interval</td><td>Difference, affinity</td><td><code>+</code>, <code>-</code></td><td>Comparison to a standard</td><td>Arithectic mean</td><td>Deviation</td></tr><tr><td>Ratio</td><td>Magnitude, amount</td><td><code>x</code>, <code>/</code></td><td>Ratio</td><td>Geometric mean, harmonic mean</td><td>Coefficient of variation, studentized range</td></tr></tbody></table><h3 id="qualitative-or-categorical-data" tabindex="-1">Qualitative or Categorical Data <a class="header-anchor" href="#qualitative-or-categorical-data" aria-label="Permalink to “Qualitative or Categorical Data”">​</a></h3><p>Qualitative data is data that describes the quality or characteristics of an object or event</p><p>AKA: <strong>categorical data</strong></p><h4 id="nominal-level" tabindex="-1">Nominal Level <a class="header-anchor" href="#nominal-level" aria-label="Permalink to “Nominal Level”">​</a></h4><p>Most basic level of measurement, it is used to categorize data into mutually exclusive categories. They are non-numeric and are used to label variables without providing any quantitative value</p><ul><li>Data can be classified into categories or classes (e.g. <code>gender</code> variable with categories like <code>male</code> or <code>female</code>)</li><li>Not possible to rank or order the categories (e.g. <code>male</code> is not greater than <code>female</code>)</li></ul><p>Types of charts used to represent nominal data:</p><ul><li><strong>Pie chart</strong></li><li><strong>Frequency distribution</strong></li></ul><h4 id="ordinal-scale" tabindex="-1">Ordinal Scale <a class="header-anchor" href="#ordinal-scale" aria-label="Permalink to “Ordinal Scale”">​</a></h4><p>Ordinal values represent discrete and ordered units. Unlike nominal, here the ordering matters</p><p>However, there is no consistency in the relative distance between the adjacent categories. And, similar to nominal data, ordinal data also don&#39;t have a meaningful zero</p><ul><li>Categorical data that has an explicit ordering</li><li>AKA: <strong>ordered factor</strong></li></ul><p><em>Example:</em></p><ul><li>Opinion (agree, mostly agree, neutral, mostly disagree, disagree)</li><li>Socioeconomic status (low income, middle income, high income)</li></ul><p>Ordinal scale is a scale with ranks, those ranks only have sense in that they are ordered</p><ul><li><p>The distance <code>[rank n]</code> - <code>[rank n-1]</code> is not necessarily the same as <code>[rank n-1]</code> - <code>[rank n-2]</code></p></li><li><p>But <code>[rank n]</code> will be greater than <code>[rank n-1]</code> and <code>[rank n-1]</code> will be greater than <code>[rank n-2]</code> for all <code>n</code> where <code>[rank n]</code>, <code>[rank n-1]</code>, and <code>[rank n-2]</code> exist</p></li><li><p>Ranks of an ordinal scale may be represented by a system with numbers or names and an agreed order</p></li></ul><p><em>Example:</em> The Likert scale. Consider five possible responses to a question, perhaps <em>Our president is a great man</em>, with answers on this scale</p><table tabindex="0"><thead><tr><th>Response:</th><th style="text-align:center;">Strongly disagree</th><th style="text-align:center;">Disagree</th><th style="text-align:center;">Neither agree nor disagree</th><th style="text-align:center;">Agree</th><th style="text-align:center;">Strongly agree</th></tr></thead><tbody><tr><td>Code:</td><td style="text-align:center;">1</td><td style="text-align:center;">2</td><td style="text-align:center;">3</td><td style="text-align:center;">4</td><td style="text-align:center;">5</td></tr></tbody></table><ul><li>Here the answers are a ranked scale reflected in the choice of numeric code</li><li>However, the is no sense in which the distance between <code>Strongly disagree</code> and <code>Agree</code> is the same as between <code>Strongly disagree</code> and <code>Disagree</code></li></ul><p>Types of charts used to represent ordinal data:</p><ul><li><strong>Bar chart</strong></li></ul><h3 id="quantitative-or-numerical-data" tabindex="-1">Quantitative or Numerical Data <a class="header-anchor" href="#quantitative-or-numerical-data" aria-label="Permalink to “Quantitative or Numerical Data”">​</a></h3><p>Quantitative data is also known as numerical data which represents the numerical value (i.e., how much, how often, how many)</p><p>AKA: <strong>numeric data</strong></p><ul><li><p><em>Discrete</em> data: Data that can only take specific values (e.g. <code>number of students in a class</code>)</p><ul><li>Its values are distinct and separate</li><li>It <strong>can&#39;t be measured but it can be counted</strong></li><li>Data that can only take on integer values, such as counts</li><li>AKA: <strong>meristic</strong></li></ul></li><li><p><em>Continuous</em> data: Data that can take any value within a range (e.g. <code>temperature range</code>)</p><ul><li>It <strong>can&#39;t be counted but they can be measured</strong></li><li>Data that can take on any value in an interval, such as weight or length</li><li>The precision of the measurement is limited only by the precision of the measuring equipment</li></ul></li></ul><h4 id="interval-scale" tabindex="-1">Interval Scale <a class="header-anchor" href="#interval-scale" aria-label="Permalink to “Interval Scale”">​</a></h4><p>Interval scale is a scale that not only measures the order but also the exact difference between the values. It is a scale that has a meaningful zero point</p><p>The interval type allows for defining the <em>degree of difference</em> between measurements, but not the ratio between measurements</p><ul><li>Represents <strong>ordered units that have the same difference</strong></li><li>The differences are uniform and meaningful</li><li>The zero point is arbitrary and does not indicate the absence of the quantity being measured (<strong>don&#39;t have a true zero</strong>)</li></ul><p><em>Example:</em></p><ul><li>IQ test&#39;s intelligence scale</li><li>Time if measured using a 12-hour clock</li></ul><h4 id="ratio-scale" tabindex="-1">Ratio Scale <a class="header-anchor" href="#ratio-scale" aria-label="Permalink to “Ratio Scale”">​</a></h4><p>Ratio values are also ordered units that have the same difference. Ratio values are <strong>the same as interval values, with the difference that they do have an absolute zero</strong></p><p><em>Example:</em></p><ul><li>Temperature in Kelvin (0, +10, +20, +30, +40, etc.)</li><li>Height (5ft. 8in., 5ft. 9in., 5ft. 10in., 5ft. 11in., 6ft. 0in. etc.)</li></ul><div class="language-text"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span>How old are you?</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>A. 18-24 years old</span></span>
+<span class="line"><span>B. 25-34 years old</span></span>
+<span class="line"><span>C. 35-44 years old</span></span>
+<span class="line"><span>D. 45-54 years old</span></span>
+<span class="line"><span>E. 55-64 years old</span></span></code></pre></div></div></div></main><footer class="VPDocFooter" data-v-eae19221 data-v-21433e0f><!--[--><!--]--><div class="edit-info" data-v-21433e0f><div class="edit-link" data-v-21433e0f><a class="VPLink link vp-external-link-icon no-icon edit-link-button" href="https://github.com/25prabhu10/notes/edit/master/docs/Non-Sorted/Math/Statistics.md" target="_blank" rel="noreferrer" data-v-21433e0f><!--[--><span class="vpi-square-pen edit-link-icon" data-v-21433e0f></span> Edit this page on GitHub<!--]--></a></div><div class="last-updated" data-v-21433e0f><p class="VPLastUpdated" data-v-21433e0f data-v-74d37e18>Updated at: <time datetime="2025-12-30T00:19:57.000Z" data-v-74d37e18></time></p></div></div><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-087f3d3f data-v-63f0225e><div class="container" data-v-63f0225e><p class="message" data-v-63f0225e>Released under the <a href="https://github.com/25prabhu10/notes/blob/master/LICENSE">MIT License</a>.</p><p class="copyright" data-v-63f0225e>Copyright © 2020-2026 <a href="https://github.com/25prabhu10">Prabhu K Hiremath</a></p></div></footer><!--[--><!--]--></div></div>
+    
+    
+  </body>
+</html>

@@ -1,0 +1,2067 @@
+<!DOCTYPE html>
+<html lang="en-IN" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>Chess | Notes</title>
+    <meta name="description" content="A strategic board game played on a checkered board with 64 squares">
+    <meta name="generator" content="VitePress v2.0.0-alpha.20">
+    
+    <link rel="preload stylesheet" href="/assets/style.--QVjO6q.css" as="style">
+    <link rel="preload stylesheet" href="/assets/vp-icons.3ec7c4fc.css" as="style">
+    <script type="module" src="/assets/chunks/metadata.a2bead65.js"></script>
+    <script type="module" src="/assets/app.eFS9UG_d.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.q5rAVC0E.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/framework.DPTtP3IW.js">
+    <link rel="modulepreload" href="/assets/chunks/theme.QaGs10w0.js">
+    <link rel="modulepreload" href="/assets/Collection_Chess.md.DcF5EJ8y.lean.js">
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport">
+    <link href="/logo.png" rel="icon">
+    <link href="/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/icons/apple-touch-icon-180x180-precomposed.png" rel="apple-touch-icon-precomposed" sizes="180x180">
+    <link color="#3eaf7c" href="/icons/safari-pinned-tab.svg" rel="mask-icon">
+    <link href="/manifest.json" rel="manifest">
+    <meta content="yes" name="mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="Notes" name="application-name">
+    <meta content="#3eaf7c" name="msapplication-TileColor">
+    <meta content="#3eaf7c" name="theme-color">
+    <meta content="/browserconfig.xml" name="msapplication-config">
+    <script id="check-dark-mode">(()=>{let e=localStorage.getItem(`vitepress-theme-appearance`)||`auto`,t=window.matchMedia(`(prefers-color-scheme: dark)`).matches;(!e||e===`auto`?t:e===`dark`)&&document.documentElement.classList.add(`dark`)})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle(`mac`,/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-087f3d3f><!--[--><!--]--><!--[--><span tabindex="-1" data-v-62da967b></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-62da967b>Skip to content</a><!--]--><!----><header class="VPNav" data-v-087f3d3f data-v-753409b0><div class="VPNavBar top" data-v-753409b0 data-v-a3b362f2><div class="wrapper" data-v-a3b362f2><div class="container" data-v-a3b362f2><div class="title" data-v-a3b362f2><div class="VPNavBarTitle" data-v-a3b362f2 data-v-df93c784><a class="title" href="/" title="Notes" data-v-df93c784><!--[--><!--]--><!--[--><img class="VPImage logo" src="/logo.png" alt data-v-c2709f74><!--]--><span data-v-df93c784>Notes</span><!--[--><!--]--></a></div></div><div class="content" data-v-a3b362f2><div class="content-body" data-v-a3b362f2><!--[--><!--]--><div class="VPNavBarSearch search" data-v-a3b362f2 data-v-a42fb57f><!--[--><button type="button" class="VPNavBarSearchButton" aria-label="Search" aria-keyshortcuts="/ control+k meta+k" data-v-a42fb57f data-v-0b410f28><span class="vpi-search" aria-hidden="true" data-v-0b410f28></span><span class="text" data-v-0b410f28>Search</span><span class="keys" aria-hidden="true" data-v-0b410f28><kbd class="key-mod" data-v-0b410f28></kbd><kbd class="key-k" data-v-0b410f28></kbd></span></button><!----><!--]--></div><nav aria-label="Main Navigation" class="VPNavMenu VPNavBarMenu menu" data-v-a3b362f2 data-v-75f98cb2><ul class="list" data-v-75f98cb2><!--[--><li class="" data-v-75f98cb2><a class="VPLink link VPNavMenuLink VPNavBarMenuLink" href="/" data-v-75f98cb2 data-v-599a9be8><!--[--><span data-v-599a9be8>Home</span><!--]--></a></li><li class="" data-v-75f98cb2><a class="VPLink link VPNavMenuLink VPNavBarMenuLink" href="/about.html" data-v-75f98cb2 data-v-599a9be8><!--[--><span data-v-599a9be8>About</span><!--]--></a></li><!--]--></ul></nav><!----><div class="VPNavAppearance VPNavBarAppearance appearance" data-v-a3b362f2 data-v-ecc13e65><!----><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-label="Appearance" aria-checked="false" data-v-ecc13e65 data-v-eb85f878 data-v-979f3796><span class="check" data-v-979f3796><span class="icon" data-v-979f3796><!--[--><span class="vpi-sun sun" aria-hidden="true" data-v-eb85f878></span><span class="vpi-moon moon" aria-hidden="true" data-v-eb85f878></span><!--]--></span></span></button></div><ul class="VPSocialLinks VPNavSocialLinks VPNavBarSocialLinks social-links" data-v-a3b362f2 data-v-e7fb7c4c data-v-52cb646e><!--[--><li data-v-52cb646e><a class="VPSocialLink no-icon" href="https://github.com/25prabhu10/notes" aria-label="github" target="_blank" rel="me noopener" data-v-52cb646e data-v-6e0ec538><span class="vpi-simple-icons-github" data-v-6e0ec538 data-v-532fb2a2></span></a></li><!--]--></ul><!----><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="Menu" aria-expanded="false" data-v-a3b362f2 data-v-7de49c6c><span class="container" aria-hidden="true" data-v-7de49c6c><span class="top" data-v-7de49c6c></span><span class="middle" data-v-7de49c6c></span><span class="bottom" data-v-7de49c6c></span></span></button></div></div></div></div><div class="divider" data-v-a3b362f2><div class="divider-line" data-v-a3b362f2></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-087f3d3f data-v-4cc01fb6><div class="container" data-v-4cc01fb6><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-allow-mismatch="style" data-v-4cc01fb6 data-v-8e4bd93f><button type="button" data-v-8e4bd93f>Return to top</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-087f3d3f data-v-745f9d15><div class="VPDoc has-aside" data-v-745f9d15 data-v-eae19221><!--[--><!--]--><div class="container" data-v-eae19221><div class="aside" data-v-eae19221><div class="aside-curtain" data-v-eae19221></div><div class="aside-container" data-v-eae19221><div class="aside-content" data-v-eae19221><div class="VPDocAside" data-v-eae19221 data-v-251983b8><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-251983b8 data-v-5c1f32df><div class="content" data-v-5c1f32df><div class="outline-marker" data-v-5c1f32df></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-5c1f32df>On this page</div><ul class="VPDocOutlineItem root" data-v-5c1f32df data-v-1481ef0d><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-251983b8></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-eae19221><div class="content-container" data-v-eae19221><!--[--><!--]--><main class="main" data-v-eae19221><div style="position:relative;" class="vp-doc _Collection_Chess" data-v-eae19221><div><h1 id="chess" tabindex="-1">Chess <a class="header-anchor" href="#chess" aria-label="Permalink to “Chess”">​</a></h1><p>Chess is played on a board of 64 squares arranged in eight vertical rows called files and eight horizontal rows called ranks</p><h2 id="setup" tabindex="-1">Setup <a class="header-anchor" href="#setup" aria-label="Permalink to “Setup”">​</a></h2><ul><li>The eight ranks are numbered <code>1</code> through <code>8</code> beginning with the rank closest to White</li><li>The files are labelled <code>a</code> through <code>h</code> beginning with the file at White&#39;s left hand</li></ul><div class="language-text"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>| *R| *N| *B| *K| *Q| *B| *N| *R| 8 Black</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|           ^</span></span>
+<span class="line"><span>| *P| *P| *P| *P| *P| *P| *P| *P| 7         |</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|           |</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 6         |</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|           |</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 5</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|          file</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 4</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|           |</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 3         |</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|           |</span></span>
+<span class="line"><span>| P | P | P | P | P | P | P | P | 2         |</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|           |</span></span>
+<span class="line"><span>| R | N | B | K | Q | B | N | R | 1 White</span></span>
+<span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>  a   b   c   d   e   f   g   h</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  ----------- rank -----------&gt;</span></span></code></pre></div><h3 id="algebraic-notation-an" tabindex="-1">Algebraic Notation (AN) <a class="header-anchor" href="#algebraic-notation-an" aria-label="Permalink to “Algebraic Notation (AN)”">​</a></h3><p>AN is the standard method for recording and describing the moves in a game of chess</p><p>It is language of chess</p><ul><li><code>K</code>: King</li><li><code>Q</code>: Queen</li><li><code>R</code>: Rook</li><li><code>B</code>: Bishop</li><li><code>N</code>: Knight</li><li><code>P</code>: Pawn (omitted from notation)</li></ul><p>Special Symbols:</p><ul><li><code>x</code>: captures</li><li><code>0-0</code>: kingside castle</li><li><code>0-0-0</code>: queenside castle</li><li><code>+</code>: check</li><li><code>#</code>: checkmate</li><li><code>!</code>: good move</li><li><code>?</code>: poor move</li><li>more <code>!s</code> and <code>?s</code> can be added for emphasis</li></ul><h2 id="movements" tabindex="-1">Movements <a class="header-anchor" href="#movements" aria-label="Permalink to “Movements”">​</a></h2><p>White moves first</p><h3 id="king" tabindex="-1">King <a class="header-anchor" href="#king" aria-label="Permalink to “King”">​</a></h3><ul><li>1 square in any direction</li></ul><div class="language-text"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 8</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 7</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   | . | . | . |   | 6</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   | . | K | . |   | 5</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   | . | . | . |   | 4</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 3</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 2</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 1</span></span>
+<span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>  a   b   c   d   e   f   g   h</span></span></code></pre></div><ul><li>Castling: The king moves two spaces to the left or to the right, and the rook moves over and in front of the king, all in one move! <ul><li>Rules for castling: <ul><li>Your king can not have moved</li><li>Your rook can not have moved</li><li>Your king can NOT be in check</li><li>Your king can not pass through check</li><li>No pieces can be between the king and rook</li></ul></li></ul></li></ul><h3 id="queen" tabindex="-1">Queen <a class="header-anchor" href="#queen" aria-label="Permalink to “Queen”">​</a></h3><ul><li>9 Points</li></ul><div class="language-text"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>| . |   |   | . |   |   | . |   | 8</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   | . |   | . |   | . |   |   | 7</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   | . | . | . |   |   |   | 6</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>| . | . | . | Q | . | . | . | . | 5</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   | . | . | . |   |   |   | 4</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   | . |   | . |   | . |   |   | 3</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>| . |   |   | . |   |   | . |   | 2</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   | . |   |   |   | . | 1</span></span>
+<span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>  a   b   c   d   e   f   g   h</span></span></code></pre></div><h3 id="rook" tabindex="-1">Rook <a class="header-anchor" href="#rook" aria-label="Permalink to “Rook”">​</a></h3><ul><li>5 Points</li></ul><div class="language-text"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>|   |   |   |   |   | . |   |   | 8</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   | . |   |   | 7</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   | . |   |   | 6</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>| . | . | . | . | . | R | . | . | 5</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   | . |   |   | 4</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   | . |   |   | 3</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   | . |   |   | 2</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   | . |   |   | 1</span></span>
+<span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>  a   b   c   d   e   f   g   h</span></span></code></pre></div><h3 id="bishop" tabindex="-1">Bishop <a class="header-anchor" href="#bishop" aria-label="Permalink to “Bishop”">​</a></h3><ul><li>3 Points (3.25 - 3.15)</li></ul><div class="language-text"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>| . |   |   |   |   |   | . |   | 8</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   | . |   |   |   | . |   |   | 7</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   | . |   | . |   |   |   | 6</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   | B |   |   |   |   | 5</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   | . |   | . |   |   |   | 4</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   | . |   |   |   | . |   |   | 3</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>| . |   |   |   |   |   | . |   | 2</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   | . | 1</span></span>
+<span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>  a   b   c   d   e   f   g   h</span></span></code></pre></div><h3 id="knight" tabindex="-1">Knight <a class="header-anchor" href="#knight" aria-label="Permalink to “Knight”">​</a></h3><ul><li>3 Points</li></ul><div class="language-text"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 8</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   | . |   | . |   |   |   | 7</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   | . |   |   |   | . |   |   | 6</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   | N |   |   |   |   | 5</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   | . |   |   |   | . |   |   | 4</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   | . |   | . |   |   |   | 3</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 2</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 1</span></span>
+<span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>  a   b   c   d   e   f   g   h</span></span></code></pre></div><h3 id="pawn" tabindex="-1">Pawn <a class="header-anchor" href="#pawn" aria-label="Permalink to “Pawn”">​</a></h3><ul><li>1 Point</li></ul><div class="language-text"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 8</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 7</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   | . |   |   |   |   | 6</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   | P |   |   |   |   | 5</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   | . |   |   | 4</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   | . |   |   | 3</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   | P |   |   | 2</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 1</span></span>
+<span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>  a   b   c   d   e   f   g   h</span></span></code></pre></div><ul><li><p>Promotion: to queen, rook, bishop, or knight of the same color, when a pawn advances to its eighth rank, as part of the move (mandatory)</p><ul><li>Promotion to a queen is known as <em>queening</em></li><li>Promotion to any other piece is known as <em>under-promotion</em></li></ul></li><li><p><a href="https://www.chess.com/terms/en-passant" target="_blank" rel="noreferrer">En Passant</a></p></li></ul><h2 id="situations" tabindex="-1">Situations <a class="header-anchor" href="#situations" aria-label="Permalink to “Situations”">​</a></h2><h3 id="check" tabindex="-1">Check <a class="header-anchor" href="#check" aria-label="Permalink to “Check”">​</a></h3><h3 id="checkmate" tabindex="-1">Checkmate <a class="header-anchor" href="#checkmate" aria-label="Permalink to “Checkmate”">​</a></h3><ul><li><p>Fool&#39;s mate: 2 move checkmate</p><ol><li><code>f3</code> <code>e6</code></li><li><code>g4</code> <code>Qh4#</code></li></ol></li><li><p>Scholar&#39;s mate: The 4 Move Checkmate</p></li></ul><h3 id="stalemate" tabindex="-1">Stalemate <a class="header-anchor" href="#stalemate" aria-label="Permalink to “Stalemate”">​</a></h3><h3 id="others" tabindex="-1">Others <a class="header-anchor" href="#others" aria-label="Permalink to “Others”">​</a></h3><ul><li>Zugzwang</li></ul><h2 id="phases" tabindex="-1">Phases <a class="header-anchor" href="#phases" aria-label="Permalink to “Phases”">​</a></h2><p>3 Phases in Chess:</p><ol><li><p>The opening, where piece development and control of the centre predominate</p></li><li><p>The middlegame, where maneuvering in defense and attack against the opponent&#39;s king or weaknesses occurs</p></li><li><p>The endgame, where, generally after several piece exchanges, pawn promotion becomes the dominant theme</p></li></ol><h3 id="opening" tabindex="-1">Opening <a class="header-anchor" href="#opening" aria-label="Permalink to “Opening”">​</a></h3><p>Setups:</p><ul><li><p>Sicilian Defence:</p><ol><li>e4 c5</li></ol></li><li><p>London system</p></li><li><p>Evans Gambit</p></li><li><p>King&#39;s Gambit:</p><ol><li>e4 e5</li><li>f4</li></ol></li><li><p>King&#39;s Indian Defence:</p><ol><li>d4 Nf6</li><li>c4 g6</li></ol></li><li><p>Benko Gambit (or Volga Gambit):</p><ol><li>d4 Nf6</li><li>c4 c5</li><li>d5 b5</li></ol></li></ul><p>What is the first worst move that a white can play at the starting position?</p><ul><li>F3 with the Pawn?</li></ul><p>What is the best opening?</p><ul><li>Caro–Kann Defence (e4, c6)</li></ul><h3 id="middlegame" tabindex="-1">Middlegame <a class="header-anchor" href="#middlegame" aria-label="Permalink to “Middlegame”">​</a></h3><ul><li>Strategic play</li><li>Tactical play</li></ul><h3 id="endgame" tabindex="-1">Endgame <a class="header-anchor" href="#endgame" aria-label="Permalink to “Endgame”">​</a></h3><h2 id="names-of-moves" tabindex="-1">Names of Moves <a class="header-anchor" href="#names-of-moves" aria-label="Permalink to “Names of Moves”">​</a></h2><ul><li>Scholar&#39;s Mate: The 4 Move Checkmate</li><li>Sicilian Defence</li><li>Wing Gambit</li><li>Rossolimo Attack Variation</li></ul><h2 id="games" tabindex="-1">Games <a class="header-anchor" href="#games" aria-label="Permalink to “Games”">​</a></h2><ul><li>Adams vs Fabrego (1988) (white checkmates in 2 moves)</li></ul><div class="language-text"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>| *R|   |   |   |   | *K| *R|   | 8</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   | *B|   |   | R |   | *N|   | 7</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>| *P| *Q|   |   |   |   | *P|   | 6</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   | Q |   |   |   | 5</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   | *P|   |   |   |   | P |   | 4</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   | P |   |   | 3</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>| P | P | P |   |   |   |   | P | 2</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   | K |   |   | R |   |   |   | 1</span></span>
+<span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>  a   b   c   d   e   f   g   h</span></span></code></pre></div><ul><li><p>The Gold Coin Game: Stefan Levitsky vs Frank Marshall (1912)</p></li><li><p>Opera Game: Paul Morphy vs Duke Karl (1858)</p></li></ul><h2 id="puzzles" tabindex="-1">Puzzles <a class="header-anchor" href="#puzzles" aria-label="Permalink to “Puzzles”">​</a></h2><ul><li>Paul Morphy (white checkmate in 2 moves)</li></ul><div class="language-text"><button title="Copy code" data-copied="Copied" class="copy"></button><span class="lang">text</span><pre class="shiki shiki-themes vitesse-dark github-light" style="--shiki-dark:#dbd7caee;--shiki-light:#24292e;--shiki-dark-bg:#121212;--shiki-light-bg:#fff;" tabindex="0" dir="ltr"><code><span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>|   |   |   |   |   | K | *B| *K| 8</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   | *P| *P| 7</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   | P |   | 6</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 5</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 4</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 3</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   |   | 2</span></span>
+<span class="line"><span>|---+---+---+---+---+---+---+---|</span></span>
+<span class="line"><span>|   |   |   |   |   |   |   | R | 1</span></span>
+<span class="line"><span> -------------------------------</span></span>
+<span class="line"><span>  a   b   c   d   e   f   g   h</span></span></code></pre></div><h2 id="elo-rating" tabindex="-1">Elo Rating <a class="header-anchor" href="#elo-rating" aria-label="Permalink to “Elo Rating”">​</a></h2><p>Elo rating system is a method for calculating the relative skill levels of players in two-player games such as chess</p><ul><li>Developed by Arpad Elo in 1960</li></ul><p>Each player has a rating which is a number. The difference in the ratings of the winner and loser determines the total number of points gained or lost after a game</p><ul><li>400 points difference: 10:1 odds</li><li>200 points difference: 5:1 odds</li><li>100 points difference: 2:1 odds</li></ul><h3 id="elo-probability-formula" tabindex="-1">Elo Probability Formula <a class="header-anchor" href="#elo-probability-formula" aria-label="Permalink to “Elo Probability Formula”">​</a></h3><span id="mjx-691d4738"><style>
+      #mjx-691d4738{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><span id="mjx-11ed6858"><style>
+      #mjx-11ed6858{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><p>Where:</p><ul><li><span id="mjx-d55808c"><style>
+      #mjx-d55808c{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> : Expected score of player A</li><li><span id="mjx-506b52a8"><style>
+      #mjx-506b52a8{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> : Expected score of player B</li><li><span id="mjx-88e443c8"><style>
+      #mjx-88e443c8{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> : Rating of player A</li><li><span id="mjx-9a70ae5"><style>
+      #mjx-9a70ae5{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> : Rating of player B</li></ul><h3 id="elo-rating-formula" tabindex="-1">Elo Rating Formula <a class="header-anchor" href="#elo-rating-formula" aria-label="Permalink to “Elo Rating Formula”">​</a></h3><span id="mjx-46fef58"><style>
+      #mjx-46fef58{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span><p>Where:</p><ul><li><span id="mjx-b3b70f7"><style>
+      #mjx-b3b70f7{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> : New rating of player A after the game</li><li><span id="mjx-b0ce8c3"><style>
+      #mjx-b0ce8c3{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> : Rating of player A before the game</li><li><span id="mjx-39b9f1d8"><style>
+      #mjx-39b9f1d8{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> : Weight of the competition (32 for rapid, 24 for blitz, 16 for standard)</li><li><span id="mjx-0c981c18"><style>
+      #mjx-0c981c18{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> : Score of player A (1 for win, 0.5 for draw, 0 for loss)</li><li><span id="mjx-6f1582c8"><style>
+      #mjx-6f1582c8{
+        display:contents;
+        mjx-assistive-mml {
+          user-select: text !important;
+          clip: auto !important;
+          color: rgba(0,0,0,0);
+        }
+        
+mjx-container[jax=&quot;SVG&quot;] {
+  direction: ltr;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax=&quot;SVG&quot;] &gt; svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display=&quot;block&quot;] {
+  width: 100% !important;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax=&quot;SVG&quot;][display=&quot;true&quot;][width=&quot;full&quot;] {
+  display: flex;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;left&quot;] {
+  text-align: left;
+}
+
+mjx-container[jax=&quot;SVG&quot;][justify=&quot;right&quot;] {
+  text-align: right;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node=&quot;merror&quot;] &gt; rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; line[data-line], svg[data-table] &gt; g &gt; line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; rect[data-frame], svg[data-table] &gt; g &gt; rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dashed, svg[data-table] &gt; g &gt; .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; .mjx-dotted, svg[data-table] &gt; g &gt; .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node=&quot;mtable&quot;] &gt; g &gt; svg {
+  overflow: visible;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax=&quot;SVG&quot;] mjx-tool &gt; mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool &gt; mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node=&quot;maction&quot;][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax=&quot;SVG&quot;] path[data-c], mjx-container[jax=&quot;SVG&quot;] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node=&quot;xypic&quot;] path {
+  stroke-width: inherit;
+}
+
+      }
+      </style><!----></span> : Expected score of player A (from the probability formula)</li></ul><h2 id="chess-engines" tabindex="-1">Chess Engines <a class="header-anchor" href="#chess-engines" aria-label="Permalink to “Chess Engines”">​</a></h2><ul><li><a href="https://github.com/official-stockfish/Stockfish" target="_blank" rel="noreferrer">Stockfish</a></li><li><a href="https://github.com/LeelaChessZero/lc0" target="_blank" rel="noreferrer">LeelaChessZero</a></li></ul><h2 id="references" tabindex="-1">References <a class="header-anchor" href="#references" aria-label="Permalink to “References”">​</a></h2><ul><li>Dvoretsky&#39;s Endgame Manual</li></ul></div></div></main><footer class="VPDocFooter" data-v-eae19221 data-v-21433e0f><!--[--><!--]--><div class="edit-info" data-v-21433e0f><div class="edit-link" data-v-21433e0f><a class="VPLink link vp-external-link-icon no-icon edit-link-button" href="https://github.com/25prabhu10/notes/edit/master/docs/Collection/Chess.md" target="_blank" rel="noreferrer" data-v-21433e0f><!--[--><span class="vpi-square-pen edit-link-icon" data-v-21433e0f></span> Edit this page on GitHub<!--]--></a></div><div class="last-updated" data-v-21433e0f><p class="VPLastUpdated" data-v-21433e0f data-v-74d37e18>Updated at: <time datetime="2025-12-30T00:19:57.000Z" data-v-74d37e18></time></p></div></div><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-087f3d3f data-v-63f0225e><div class="container" data-v-63f0225e><p class="message" data-v-63f0225e>Released under the <a href="https://github.com/25prabhu10/notes/blob/master/LICENSE">MIT License</a>.</p><p class="copyright" data-v-63f0225e>Copyright © 2020-2026 <a href="https://github.com/25prabhu10">Prabhu K Hiremath</a></p></div></footer><!--[--><!--]--></div></div>
+    
+    
+  </body>
+</html>
